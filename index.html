@@ -1,116 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vintage Bikes Germany</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Obai4AI | Junior Frontend Developer & AI Automation Builder</title>
+    <meta
+      name="description"
+      content="Portfolio of Obai Alabed Alalawi, a Leipzig-based junior frontend developer and AI automation builder creating web applications, AI tools, and practical digital products."
+    />
+    <meta
+      name="keywords"
+      content="Obai4AI, Obai Alabed Alalawi, junior frontend developer, AI automation, AI tools, prompt engineering, Leipzig, Vercel, GitHub, finance dashboards"
+    />
+    <meta name="author" content="Obai Alabed Alalawi" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#050505" />
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#111;
-    color:white;
-}
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Obai4AI | Frontend, AI Tools & Automation Projects" />
+    <meta
+      property="og:description"
+      content="Career portfolio for frontend development, AI automation, AI-assisted finance applications, and practical web products."
+    />
+    <meta property="og:site_name" content="Obai4AI" />
 
-header{
-    background:#1b1b1b;
-    padding:20px;
-    text-align:center;
-}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Obai Alabed Alalawi",
+        "brand": "Obai4AI",
+        "email": "obai990@outlook.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Leipzig",
+          "addressCountry": "DE"
+        },
+        "url": "https://obai4ai.com",
+        "sameAs": [
+          "https://github.com/Obai707",
+          "https://www.linkedin.com/in/your-linkedin-profile"
+        ],
+        "jobTitle": "Junior Frontend Developer and AI Automation Builder",
+        "knowsAbout": [
+          "Frontend Development",
+          "AI Automation",
+          "Prompt Engineering",
+          "AI-assisted Finance Applications",
+          "Business Websites",
+          "JavaScript"
+        ]
+      }
+    </script>
 
-h1{
-    color:#d4af37;
-}
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-.hero{
-    padding:80px 20px;
-    text-align:center;
-}
+    <div class="site-atmosphere" aria-hidden="true">
+      <span class="glow glow-one"></span>
+      <span class="glow glow-two"></span>
+      <span class="glow glow-three"></span>
+    </div>
 
-.hero h2{
-    font-size:3rem;
-}
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Obai4AI home">
+          <span class="brand-mark" aria-hidden="true">O4</span>
+          <span class="brand-copy">
+            <strong>Obai4AI</strong>
+            <small>AI Product Builder</small>
+          </span>
+        </a>
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    color:#ccc;
-}
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 24px;
-    background:#d4af37;
-    color:black;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="#profile">Profile</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#ai-tools">AI Tools</a>
+          <a href="#business-case">Business Case</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-mobile-action" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="nav-mobile-action" href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
 
-.bikes{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
+        <div class="nav-actions" aria-label="Profile links">
+          <a
+            class="btn btn-ghost"
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="btn btn-dark"
+            href="https://github.com/Obai707"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </nav>
+    </header>
 
-.card{
-    background:#222;
-    padding:20px;
-    border-radius:12px;
-}
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-light" aria-hidden="true"></div>
+        <div class="hero-particles" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#1b1b1b;
-}
-</style>
-</head>
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Obai4AI digital product studio</p>
+            <h1 id="hero-title">Building AI-powered web products for real business workflows.</h1>
+            <p class="hero-lede">
+              Professional Frontend Developer + AI Builder + Future Technology Founder. I build user-friendly web applications, AI-assisted tools, and automation workflows that turn ideas into practical digital products.
+            </p>
+            <div class="badge-row" aria-label="Career highlights">
+              <span>Leipzig, Germany</span>
+              <span>Open to Junior Roles</span>
+              <span>Frontend + AI</span>
+              <span>GitHub + Vercel</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-light" href="mailto:obai990@outlook.com?subject=Obai4AI%20career%20opportunity">Contact Me</a>
+              <a class="btn btn-outline" href="Obai-Alabed-Alalawi-CV.txt" download>Download CV</a>
+            </div>
+          </div>
 
-<body>
+          <aside class="hero-visual reveal" aria-label="Obai4AI AI product interface preview">
+            <div class="visual-topline">
+              <span class="status-dot"></span>
+              <span>AI product system</span>
+              <strong>Online</strong>
+            </div>
 
-<header>
-    <h1>Vintage Bikes Germany</h1>
-</header>
+            <div class="main-dashboard">
+              <div class="mini-toolbar" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="dashboard-heading">
+                <p>Obai4AI platform preview</p>
+                <h2>Frontend, automation, and AI workflows in one product surface.</h2>
+              </div>
+              <div class="metric-grid">
+                <div>
+                  <small>Interface</small>
+                  <strong>Web UI</strong>
+                </div>
+                <div>
+                  <small>AI Layer</small>
+                  <strong>Prompts</strong>
+                </div>
+                <div>
+                  <small>Delivery</small>
+                  <strong>Vercel</strong>
+                </div>
+              </div>
+              <div class="system-map" aria-hidden="true">
+                <span class="node node-one"></span>
+                <span class="node node-two"></span>
+                <span class="node node-three"></span>
+                <span class="line line-one"></span>
+                <span class="line line-two"></span>
+              </div>
+            </div>
 
-<section class="hero">
-    <h2>Ride History. Own A Legend.</h2>
-    <p>
-        Discover carefully selected vintage bicycles from the
-        70s, 80s and 90s.
-    </p>
+            <div class="orbit-card orbit-one">
+              <span class="icon-code" aria-hidden="true"></span>
+              <strong>Frontend Systems</strong>
+              <small>Responsive interfaces and clear UX</small>
+            </div>
+            <div class="orbit-card orbit-two">
+              <span class="icon-flow" aria-hidden="true"></span>
+              <strong>AI Automation</strong>
+              <small>ChatGPT, Codex, prompts, workflows</small>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-    <a href="#" class="btn">Browse Collection</a>
-</section>
+      <section class="profile section-pad" id="profile" aria-labelledby="profile-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Profile</p>
+          <h2 id="profile-title">A practical builder for AI-assisted frontend and business applications.</h2>
+          <p>
+            I am Obai Alabed Alalawi, based in Leipzig, Germany. My portfolio is focused on junior frontend, AI automation, AI-assisted finance applications, and practical web product roles.
+          </p>
+        </div>
 
-<section class="bikes">
+        <article class="fit-card reveal" id="job-match">
+          <p class="eyebrow">Job Match</p>
+          <h3>Why I fit AI-assisted frontend roles</h3>
+          <p>
+            I combine frontend development, AI tool usage, prompt engineering, and business thinking to build practical solutions. I am especially interested in AI-supported finance, automation, dashboards, and customer-facing applications.
+          </p>
+        </article>
 
-<div class="card">
-<h3>1987 Peugeot Road Bike</h3>
-<p>Classic steel frame.</p>
-<p>€650</p>
-</div>
+        <div class="two-column-grid">
+          <article class="profile-card reveal">
+            <span class="card-icon icon-delivery" aria-hidden="true"></span>
+            <h3>What I Can Build</h3>
+            <ul class="check-list">
+              <li>Responsive web interfaces with HTML, CSS, JavaScript and React concepts</li>
+              <li>AI-assisted frontend prototypes using ChatGPT and Codex</li>
+              <li>Business websites with clear UX and conversion-focused design</li>
+              <li>AI recommendation tools and chatbot-style assistants</li>
+              <li>Automation workflows for repetitive tasks</li>
+              <li>Dashboards, forms, calculators, and simple web apps</li>
+            </ul>
+          </article>
 
-<div class="card">
-<h3>1992 Trek Mountain Bike</h3>
-<p>Retro MTB legend.</p>
-<p>€890</p>
-</div>
+          <article class="profile-card reveal">
+            <span class="card-icon icon-profile" aria-hidden="true"></span>
+            <h3>My Profile</h3>
+            <ul class="check-list">
+              <li>Based in Leipzig, Germany</li>
+              <li>Strong interest in AI transformation and frontend development</li>
+              <li>Practical project builder using GitHub, Vercel, ChatGPT and Codex</li>
+              <li>Learning modern frontend and AI-assisted development workflows</li>
+              <li>Good communication mindset and business-focused thinking</li>
+              <li>Interested in junior roles, internships, and entry-level AI/frontend jobs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-<div class="card">
-<h3>1978 Raleigh Racer</h3>
-<p>Vintage touring bike.</p>
-<p>€720</p>
-</div>
+      <section class="skills section-pad" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="skills-title">Clean skill areas for frontend, AI tools, automation, and business delivery.</h2>
+          <p>
+            A focused technology profile for junior AI-assisted frontend roles, practical automation projects, and business-ready web products.
+          </p>
+        </div>
 
-</section>
+        <div class="skills-layout">
+          <article class="skill-column reveal">
+            <span class="skill-kicker">01</span>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React basics, Responsive Design</p>
+          </article>
+          <article class="skill-column reveal">
+            <span class="skill-kicker">02</span>
+            <h3>AI Tools</h3>
+            <p>ChatGPT, Codex, Prompt Engineering, OpenAI API basics</p>
+          </article>
+          <article class="skill-column reveal">
+            <span class="skill-kicker">03</span>
+            <h3>Automation</h3>
+            <p>n8n, Zapier, Make, API workflows</p>
+          </article>
+          <article class="skill-column reveal">
+            <span class="skill-kicker">04</span>
+            <h3>Developer Tools</h3>
+            <p>GitHub, Vercel, VS Code, Browser DevTools</p>
+          </article>
+          <article class="skill-column reveal">
+            <span class="skill-kicker">05</span>
+            <h3>Business</h3>
+            <p>LinkedIn optimization, customer workflows, product thinking, documentation</p>
+          </article>
+        </div>
+      </section>
 
-<footer>
-© 2026 Vintage Bikes Germany
-</footer>
+      <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project Showcase</p>
+          <h2 id="projects-title">Premium product concepts built around business value and AI-assisted delivery.</h2>
+          <p>
+            Each project is presented as a product surface: a business problem, a clear user experience, and a practical delivery path.
+          </p>
+        </div>
 
-</body>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-visual visual-bike" aria-hidden="true">
+              <span class="screen-card screen-primary"></span>
+              <span class="screen-card screen-secondary"></span>
+              <span class="visual-orbit"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Business Website</span>
+                <span>Frontend</span>
+              </div>
+              <h3>Vintage Bikes Leipzig</h3>
+              <p>
+                A local business website concept for renting and selling vintage bikes in Leipzig with pricing, student discounts, loyalty offer, and AI Bike Advisor.
+              </p>
+              <div class="tag-row" aria-label="Technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Vercel</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-button" href="https://obai4ai.com" target="_blank" rel="noopener noreferrer">View Live</a>
+                <a class="text-button" href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">View Code</a>
+                <a class="text-button" href="#business-case">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-advisor" aria-hidden="true">
+              <span class="decision-node node-a"></span>
+              <span class="decision-node node-b"></span>
+              <span class="decision-node node-c"></span>
+              <span class="decision-line"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Recommendation Tool</span>
+                <span>AI Concept</span>
+              </div>
+              <h3>AI Bike Advisor</h3>
+              <p>
+                A frontend recommendation tool that helps users choose a bike based on budget, style, and use case.
+              </p>
+              <div class="tag-row" aria-label="Technologies">
+                <span>JavaScript</span>
+                <span>Logic</span>
+                <span>UX Flow</span>
+                <span>AI Idea</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-button" href="https://obai4ai.com" target="_blank" rel="noopener noreferrer">View Live</a>
+                <a class="text-button" href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">View Code</a>
+                <a class="text-button" href="#business-case">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-portfolio" aria-hidden="true">
+              <span class="portfolio-panel panel-one"></span>
+              <span class="portfolio-panel panel-two"></span>
+              <span class="portfolio-panel panel-three"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Career Portfolio</span>
+                <span>Obai4AI</span>
+              </div>
+              <h3>AI Career Portfolio</h3>
+              <p>
+                A professional portfolio designed to demonstrate AI-assisted frontend development and job-readiness.
+              </p>
+              <div class="tag-row" aria-label="Technologies">
+                <span>Brand UI</span>
+                <span>SEO</span>
+                <span>GitHub</span>
+                <span>Career UX</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-button" href="https://obai4ai.com" target="_blank" rel="noopener noreferrer">View Live</a>
+                <a class="text-button" href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">View Code</a>
+                <a class="text-button" href="#business-case">Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ai-tools section-pad" id="ai-tools" aria-labelledby="ai-tools-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">AI Workflow</p>
+          <h2 id="ai-tools-title">How I Use AI in Development</h2>
+          <p>
+            AI is part of my process for rapid prototyping, testing ideas, improving communication, and turning workflows into usable product interfaces.
+          </p>
+        </div>
+
+        <div class="tool-grid">
+          <article class="tool-card reveal">
+            <span class="tool-number">01</span>
+            <h3>Generate first drafts with Codex</h3>
+            <p>I use AI to move quickly from a rough idea to a working HTML, CSS, and JavaScript structure.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-number">02</span>
+            <h3>Improve UX copy with ChatGPT</h3>
+            <p>I refine page text, labels, project descriptions, and application messaging for clearer business communication.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-number">03</span>
+            <h3>Debug code step by step</h3>
+            <p>I use AI to understand errors, test fixes, and improve code quality while learning the reasoning behind changes.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-number">04</span>
+            <h3>Create project ideas</h3>
+            <p>I turn business needs into portfolio projects, interface concepts, and simple product workflows.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-number">05</span>
+            <h3>Build simple AI assistants</h3>
+            <p>I plan chatbot-style helpers, recommendation tools, and guided forms for practical customer-facing use cases.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-number">06</span>
+            <h3>Document projects for LinkedIn and GitHub</h3>
+            <p>I use AI to prepare project summaries, case studies, README content, and professional career updates.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="business-case section-pad" id="business-case" aria-labelledby="case-title">
+        <div class="case-shell reveal">
+          <div class="case-copy">
+            <p class="eyebrow">Business Case</p>
+            <h2 id="case-title">Mini Case Study: From Idea to Website</h2>
+            <p>
+              I created a real business concept, bought a domain, connected GitHub with Vercel, deployed a live website, and used AI tools to generate and improve the design. This shows practical problem-solving, not only theory.
+            </p>
+          </div>
+
+          <ol class="timeline">
+            <li>
+              <span>01</span>
+              <strong>Domain setup</strong>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>GitHub repository</strong>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Vercel deployment</strong>
+            </li>
+            <li>
+              <span>04</span>
+              <strong>Website design</strong>
+            </li>
+            <li>
+              <span>05</span>
+              <strong>AI-assisted improvements</strong>
+            </li>
+            <li>
+              <span>06</span>
+              <strong>Future chatbot and automation features</strong>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's build useful AI-powered web experiences.</h2>
+            <p>
+              I am open to junior roles, internships, and entry-level projects connected to frontend development, AI tools, automation, dashboards, and practical business applications.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:obai990@outlook.com?subject=Obai4AI%20career%20opportunity">Contact Me</a>
+              <a class="btn btn-dark" href="Obai-Alabed-Alalawi-CV.txt" download>Download CV</a>
+            </div>
+          </div>
+
+          <aside class="contact-panel reveal" aria-label="Contact details">
+            <div class="contact-row">
+              <span>Email</span>
+              <a href="mailto:obai990@outlook.com">obai990@outlook.com</a>
+            </div>
+            <div class="contact-row">
+              <span>Location</span>
+              <strong>Leipzig, Germany</strong>
+            </div>
+            <div class="contact-row">
+              <span>GitHub</span>
+              <a href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">Obai707</a>
+            </div>
+            <div class="contact-row">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">Add placeholder link</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Obai4AI home">
+            <span class="brand-mark" aria-hidden="true">O4</span>
+            <span class="brand-copy">
+              <strong>Obai4AI</strong>
+              <small>Frontend, AI Tools &amp; Automation Projects</small>
+            </span>
+          </a>
+          <p>
+            A career-focused technology portfolio for AI-powered web products, business automation, and frontend systems.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Resources</h2>
+          <a href="Obai-Alabed-Alalawi-CV.txt" download>Download CV</a>
+          <a href="#business-case">Case Study</a>
+          <a href="#ai-tools">AI Workflow</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Projects</h2>
+          <a href="#projects">Vintage Bikes Leipzig</a>
+          <a href="#projects">AI Bike Advisor</a>
+          <a href="#projects">AI Career Portfolio</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Contact</h2>
+          <a href="mailto:obai990@outlook.com">obai990@outlook.com</a>
+          <a href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <form class="newsletter-card" action="mailto:obai990@outlook.com" method="post" enctype="text/plain">
+          <h2>Stay Connected</h2>
+          <p>Follow future AI, automation, and frontend project updates from Obai4AI.</p>
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <div class="newsletter-form">
+            <input id="newsletter-email" type="email" name="email" placeholder="Email address" />
+            <button class="btn btn-primary" type="submit">Notify Me</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> Obai4AI. Built by Obai Alabed Alalawi.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
