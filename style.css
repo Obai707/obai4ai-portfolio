@@ -336,6 +336,7 @@ input {
 .btn-light,
 .btn-ghost,
 .btn-outline,
+.btn-secondary,
 .btn-dark,
 .text-button {
   border-color: var(--border-strong);
@@ -347,16 +348,31 @@ input {
 .btn-light:hover,
 .btn-ghost:hover,
 .btn-outline:hover,
+.btn-secondary:hover,
 .btn-dark:hover,
 .text-button:hover,
 .btn-light:focus-visible,
 .btn-ghost:focus-visible,
 .btn-outline:focus-visible,
+.btn-secondary:focus-visible,
 .btn-dark:focus-visible,
 .text-button:focus-visible {
   border-color: rgba(118, 185, 0, 0.55);
   background: rgba(118, 185, 0, 0.11);
   box-shadow: var(--green-glow);
+}
+
+.btn-secondary::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background: currentColor;
+  clip-path: polygon(42% 0, 58% 0, 58% 48%, 76% 30%, 88% 42%, 50% 80%, 12% 42%, 24% 30%, 42% 48%);
+}
+
+.btn-secondary::after {
+  z-index: -1;
 }
 
 .hero {
