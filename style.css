@@ -2520,11 +2520,13 @@ body::after {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
   margin-top: auto;
   padding-top: 28px;
 }
 
 .showcase-actions .text-button {
+  min-width: min(220px, 100%);
   min-height: 42px;
   padding: 9px 12px;
   font-size: 0.86rem;
