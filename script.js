@@ -209,7 +209,7 @@ const translations = {
     "contact.email": "Email",
     "contact.location": "Location",
     "contact.locationValue": "Leipzig, Germany",
-    "contact.linkedinPlaceholder": "Add placeholder link",
+    "contact.linkedinPlaceholder": "Obai Alabed Alalawi",
     "footer.brandSmall": "Frontend, AI Tools & Automation Projects",
     "footer.brandText":
       "A career-focused technology portfolio for AI-powered web products, business automation, and frontend systems.",
@@ -388,7 +388,7 @@ const translations = {
     "contact.email": "E-Mail",
     "contact.location": "Standort",
     "contact.locationValue": "Leipzig, Deutschland",
-    "contact.linkedinPlaceholder": "Platzhalter-Link hinzufügen",
+    "contact.linkedinPlaceholder": "Obai Alabed Alalawi",
     "footer.brandSmall": "Frontend, KI-Tools & Automatisierungsprojekte",
     "footer.brandText":
       "Ein karriereorientiertes Technologieportfolio für KI-gestützte Webprodukte, Business-Automatisierung und Frontend-Systeme.",
@@ -566,7 +566,7 @@ const translations = {
     "contact.email": "Email",
     "contact.location": "Ubicación",
     "contact.locationValue": "Leipzig, Alemania",
-    "contact.linkedinPlaceholder": "Añadir enlace provisional",
+    "contact.linkedinPlaceholder": "Obai Alabed Alalawi",
     "footer.brandSmall": "Frontend, herramientas de IA y proyectos de automatización",
     "footer.brandText":
       "Un portfolio tecnológico orientado a carrera para productos web impulsados por IA, automatización empresarial y sistemas frontend.",
