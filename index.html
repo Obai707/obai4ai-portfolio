@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
 
     <div class="site-atmosphere" aria-hidden="true">
       <span class="glow glow-one"></span>
@@ -70,12 +70,12 @@
     </div>
 
     <header class="site-header" data-header>
-      <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Obai4AI home">
+      <nav class="nav-shell" aria-label="Primary navigation" data-i18n-aria-label="nav.aria">
+        <a class="brand" href="#top" aria-label="Obai4AI home" data-i18n-aria-label="brand.home">
           <span class="brand-mark" aria-hidden="true">O4</span>
           <span class="brand-copy">
             <strong>Obai4AI</strong>
-            <small>AI Product Builder</small>
+            <small data-i18n="brand.tagline">AI Product Builder</small>
           </span>
         </a>
 
@@ -85,30 +85,49 @@
           aria-expanded="false"
           aria-controls="nav-menu"
           data-nav-toggle
+          aria-label="Open menu"
+          data-i18n-aria-label="nav.openMenu"
         >
           <span></span>
           <span></span>
           <span></span>
-          <span class="sr-only">Open menu</span>
+          <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
         </button>
 
         <div class="nav-menu" id="nav-menu" data-nav-menu>
-          <a href="#profile">Profile</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#ai-tools">AI Tools</a>
-          <a href="#business-case">Business Case</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-mobile-action" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="nav-mobile-action" href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#profile" data-i18n="nav.profile">Profile</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#ai-tools" data-i18n="nav.aiTools">AI Tools</a>
+          <a href="#business-case" data-i18n="nav.businessCase">Business Case</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+
+          <div class="language-switcher" aria-label="Language selector" data-i18n-aria-label="language.label">
+            <button class="language-option" type="button" data-language="en" aria-label="Switch language to English" data-i18n-aria-label="language.en">
+              <span aria-hidden="true">🇬🇧</span>
+              <span>EN</span>
+            </button>
+            <button class="language-option" type="button" data-language="de" aria-label="Sprache auf Deutsch wechseln" data-i18n-aria-label="language.de">
+              <span aria-hidden="true">🇩🇪</span>
+              <span>DE</span>
+            </button>
+            <button class="language-option" type="button" data-language="es" aria-label="Cambiar idioma a español" data-i18n-aria-label="language.es">
+              <span aria-hidden="true">🇪🇸</span>
+              <span>ES</span>
+            </button>
+          </div>
+
+          <a class="nav-mobile-action" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" data-i18n="social.linkedin">LinkedIn</a>
+          <a class="nav-mobile-action" href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer" data-i18n="social.github">GitHub</a>
         </div>
 
-        <div class="nav-actions" aria-label="Profile links">
+        <div class="nav-actions" aria-label="Profile links" data-i18n-aria-label="nav.profileLinks">
           <a
             class="btn btn-ghost"
             href="https://www.linkedin.com/in/your-linkedin-profile"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="social.linkedin"
           >
             LinkedIn
           </a>
@@ -117,6 +136,7 @@
             href="https://github.com/Obai707"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="social.github"
           >
             GitHub
           </a>
@@ -139,29 +159,29 @@
 
         <div class="hero-inner">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Obai4AI digital product studio</p>
-            <h1 id="hero-title">Building AI-powered web products for real business workflows.</h1>
-            <p class="hero-lede">
-              Professional Frontend Developer + AI Builder + Future Technology Founder. I build user-friendly web applications, AI-assisted tools, and automation workflows that turn ideas into practical digital products.
+            <p class="eyebrow" data-i18n="hero.eyebrow">Obai4AI digital product studio</p>
+            <h1 id="hero-title" data-i18n="hero.title">Building AI-powered web products for real business workflows.</h1>
+            <p class="hero-lede" data-i18n="hero.lede">
+              I build user-friendly web applications, AI-assisted tools, and automation workflows that turn business needs into practical digital products.
             </p>
-            <div class="badge-row" aria-label="Career highlights">
-              <span>Leipzig, Germany</span>
-              <span>Open to Junior Roles</span>
-              <span>Frontend + AI</span>
-              <span>GitHub + Vercel</span>
+            <div class="badge-row" aria-label="Career highlights" data-i18n-aria-label="hero.badgesAria">
+              <span data-i18n="hero.badge.location">Leipzig, Germany</span>
+              <span data-i18n="hero.badge.roles">Open to Junior Roles</span>
+              <span data-i18n="hero.badge.frontendAi">Frontend + AI</span>
+              <span data-i18n="hero.badge.githubVercel">GitHub + Vercel</span>
             </div>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-light" href="mailto:obai990@outlook.com?subject=Obai4AI%20career%20opportunity">Contact Me</a>
-              <a href="Lebenslauf.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+              <a class="btn btn-primary" href="#projects" data-i18n="button.viewProjects">View Projects</a>
+              <a class="btn btn-light" href="mailto:obai990@outlook.com?subject=Obai4AI%20career%20opportunity" data-i18n="button.contactMe">Contact Me</a>
+              <a href="Lebenslauf.pdf" target="_blank" class="btn btn-secondary" data-i18n="button.downloadCv">Download CV</a>
             </div>
           </div>
 
-          <aside class="hero-visual reveal" aria-label="Obai4AI AI product interface preview">
+          <aside class="hero-visual reveal" aria-label="Obai4AI AI product interface preview" data-i18n-aria-label="hero.visualAria">
             <div class="visual-topline">
               <span class="status-dot"></span>
-              <span>AI product system</span>
-              <strong>Online</strong>
+              <span data-i18n="hero.visual.system">AI product system</span>
+              <strong data-i18n="hero.visual.status">Online</strong>
             </div>
 
             <div class="main-dashboard">
@@ -171,20 +191,20 @@
                 <span></span>
               </div>
               <div class="dashboard-heading">
-                <p>Obai4AI platform preview</p>
-                <h2>Frontend, automation, and AI workflows in one product surface.</h2>
+                <p data-i18n="hero.dashboard.eyebrow">Obai4AI platform preview</p>
+                <h2 data-i18n="hero.dashboard.title">Frontend, automation, and AI workflows in one product surface.</h2>
               </div>
               <div class="metric-grid">
                 <div>
-                  <small>Interface</small>
-                  <strong>Web UI</strong>
+                  <small data-i18n="hero.metric.interface">Interface</small>
+                  <strong data-i18n="hero.metric.webUi">Web UI</strong>
                 </div>
                 <div>
-                  <small>AI Layer</small>
-                  <strong>Prompts</strong>
+                  <small data-i18n="hero.metric.aiLayer">AI Layer</small>
+                  <strong data-i18n="hero.metric.prompts">Prompts</strong>
                 </div>
                 <div>
-                  <small>Delivery</small>
+                  <small data-i18n="hero.metric.delivery">Delivery</small>
                   <strong>Vercel</strong>
                 </div>
               </div>
@@ -199,13 +219,13 @@
 
             <div class="orbit-card orbit-one">
               <span class="icon-code" aria-hidden="true"></span>
-              <strong>Frontend Systems</strong>
-              <small>Responsive interfaces and clear UX</small>
+              <strong data-i18n="hero.orbit.frontend.title">Frontend Systems</strong>
+              <small data-i18n="hero.orbit.frontend.text">Responsive interfaces and clear UX</small>
             </div>
             <div class="orbit-card orbit-two">
               <span class="icon-flow" aria-hidden="true"></span>
-              <strong>AI Automation</strong>
-              <small>ChatGPT, Codex, prompts, workflows</small>
+              <strong data-i18n="hero.orbit.automation.title">AI Automation</strong>
+              <small data-i18n="hero.orbit.automation.text">ChatGPT, Codex, prompts, workflows</small>
             </div>
           </aside>
         </div>
@@ -213,17 +233,17 @@
 
       <section class="profile section-pad" id="profile" aria-labelledby="profile-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Profile</p>
-          <h2 id="profile-title">A practical builder for AI-assisted frontend and business applications.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="profile.eyebrow">Profile</p>
+          <h2 id="profile-title" data-i18n="profile.title">A practical builder for AI-assisted frontend and business applications.</h2>
+          <p data-i18n="profile.text">
             I am Obai Alabed Alalawi, based in Leipzig, Germany. My portfolio is focused on junior frontend, AI automation, AI-assisted finance applications, and practical web product roles.
           </p>
         </div>
 
         <article class="fit-card reveal" id="job-match">
-          <p class="eyebrow">Job Match</p>
-          <h3>Why I fit AI-assisted frontend roles</h3>
-          <p>
+          <p class="eyebrow" data-i18n="jobMatch.eyebrow">Job Match</p>
+          <h3 data-i18n="jobMatch.title">Why I fit AI-assisted frontend roles</h3>
+          <p data-i18n="jobMatch.text">
             I combine frontend development, AI tool usage, prompt engineering, and business thinking to build practical solutions. I am especially interested in AI-supported finance, automation, dashboards, and customer-facing applications.
           </p>
         </article>
@@ -231,27 +251,27 @@
         <div class="two-column-grid">
           <article class="profile-card reveal">
             <span class="card-icon icon-delivery" aria-hidden="true"></span>
-            <h3>What I Can Build</h3>
+            <h3 data-i18n="build.title">What I Can Build</h3>
             <ul class="check-list">
-              <li>Responsive web interfaces with HTML, CSS, JavaScript and React concepts</li>
-              <li>AI-assisted frontend prototypes using ChatGPT and Codex</li>
-              <li>Business websites with clear UX and conversion-focused design</li>
-              <li>AI recommendation tools and chatbot-style assistants</li>
-              <li>Automation workflows for repetitive tasks</li>
-              <li>Dashboards, forms, calculators, and simple web apps</li>
+              <li data-i18n="build.item1">Responsive web interfaces with HTML, CSS, JavaScript and React concepts</li>
+              <li data-i18n="build.item2">AI-assisted frontend prototypes using ChatGPT and Codex</li>
+              <li data-i18n="build.item3">Business websites with clear UX and conversion-focused design</li>
+              <li data-i18n="build.item4">AI recommendation tools and chatbot-style assistants</li>
+              <li data-i18n="build.item5">Automation workflows for repetitive tasks</li>
+              <li data-i18n="build.item6">Dashboards, forms, calculators, and simple web apps</li>
             </ul>
           </article>
 
           <article class="profile-card reveal">
             <span class="card-icon icon-profile" aria-hidden="true"></span>
-            <h3>My Profile</h3>
+            <h3 data-i18n="myProfile.title">My Profile</h3>
             <ul class="check-list">
-              <li>Based in Leipzig, Germany</li>
-              <li>Strong interest in AI transformation and frontend development</li>
-              <li>Practical project builder using GitHub, Vercel, ChatGPT and Codex</li>
-              <li>Learning modern frontend and AI-assisted development workflows</li>
-              <li>Good communication mindset and business-focused thinking</li>
-              <li>Interested in junior roles, internships, and entry-level AI/frontend jobs</li>
+              <li data-i18n="myProfile.item1">Based in Leipzig, Germany</li>
+              <li data-i18n="myProfile.item2">Strong interest in AI transformation and frontend development</li>
+              <li data-i18n="myProfile.item3">Practical project builder using GitHub, Vercel, ChatGPT and Codex</li>
+              <li data-i18n="myProfile.item4">Learning modern frontend and AI-assisted development workflows</li>
+              <li data-i18n="myProfile.item5">Good communication mindset and business-focused thinking</li>
+              <li data-i18n="myProfile.item6">Interested in junior roles, internships, and entry-level AI/frontend jobs</li>
             </ul>
           </article>
         </div>
@@ -259,9 +279,9 @@
 
       <section class="skills section-pad" id="skills" aria-labelledby="skills-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Capabilities</p>
-          <h2 id="skills-title">Clean skill areas for frontend, AI tools, automation, and business delivery.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="skills.eyebrow">Capabilities</p>
+          <h2 id="skills-title" data-i18n="skills.title">Clean skill areas for frontend, AI tools, automation, and business delivery.</h2>
+          <p data-i18n="skills.text">
             A focused technology profile for junior AI-assisted frontend roles, practical automation projects, and business-ready web products.
           </p>
         </div>
@@ -269,37 +289,37 @@
         <div class="skills-layout">
           <article class="skill-column reveal">
             <span class="skill-kicker">01</span>
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, React basics, Responsive Design</p>
+            <h3 data-i18n="skills.frontend.title">Frontend</h3>
+            <p data-i18n="skills.frontend.text">HTML, CSS, JavaScript, React basics, Responsive Design</p>
           </article>
           <article class="skill-column reveal">
             <span class="skill-kicker">02</span>
-            <h3>AI Tools</h3>
-            <p>ChatGPT, Codex, Prompt Engineering, OpenAI API basics</p>
+            <h3 data-i18n="skills.aiTools.title">AI Tools</h3>
+            <p data-i18n="skills.aiTools.text">ChatGPT, Codex, Prompt Engineering, OpenAI API basics</p>
           </article>
           <article class="skill-column reveal">
             <span class="skill-kicker">03</span>
-            <h3>Automation</h3>
-            <p>n8n, Zapier, Make, API workflows</p>
+            <h3 data-i18n="skills.automation.title">Automation</h3>
+            <p data-i18n="skills.automation.text">n8n, Zapier, Make, API workflows</p>
           </article>
           <article class="skill-column reveal">
             <span class="skill-kicker">04</span>
-            <h3>Developer Tools</h3>
-            <p>GitHub, Vercel, VS Code, Browser DevTools</p>
+            <h3 data-i18n="skills.devTools.title">Developer Tools</h3>
+            <p data-i18n="skills.devTools.text">GitHub, Vercel, VS Code, Browser DevTools</p>
           </article>
           <article class="skill-column reveal">
             <span class="skill-kicker">05</span>
-            <h3>Business</h3>
-            <p>LinkedIn optimization, customer workflows, product thinking, documentation</p>
+            <h3 data-i18n="skills.business.title">Business</h3>
+            <p data-i18n="skills.business.text">LinkedIn optimization, customer workflows, product thinking, documentation</p>
           </article>
         </div>
       </section>
 
       <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Project Showcase</p>
-          <h2 id="projects-title">AI Solutions That Save Time, Automate Workflows, and Grow Your Business.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="services.eyebrow">Project Showcase</p>
+          <h2 id="projects-title" data-i18n="services.title">AI Solutions That Save Time, Automate Workflows, and Grow Your Business.</h2>
+          <p data-i18n="services.text">
             I help businesses automate repetitive work, build AI assistants, develop modern websites, and create intelligent solutions that improve efficiency and reduce operational costs.
           </p>
         </div>
@@ -313,21 +333,21 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>AUTOMATION</span>
+                <span data-i18n="service.automation.category">AUTOMATION</span>
               </div>
-              <h3>Automate Your Work</h3>
-              <p>
+              <h3 data-i18n="service.automation.title">Automate Your Work</h3>
+              <p data-i18n="service.automation.text">
                 I build AI-powered workflows that automate repetitive tasks, connect your business tools, and save valuable time every day.
               </p>
-              <div class="tag-row" aria-label="Technologies">
+              <div class="tag-row" aria-label="Technologies" data-i18n-aria-label="project.tagsAria">
                 <span>Make</span>
                 <span>Zapier</span>
                 <span>Power Automate</span>
                 <span>n8n</span>
-                <span>AI Workflow</span>
+                <span data-i18n="tag.aiWorkflow">AI Workflow</span>
               </div>
               <div class="card-actions">
-                <a class="text-button" href="#contact">Learn More</a>
+                <a class="text-button" href="#contact" data-i18n="button.learnMore">Learn More</a>
               </div>
             </div>
           </article>
@@ -341,13 +361,13 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>AI ASSISTANTS</span>
+                <span data-i18n="service.chatbots.category">AI ASSISTANTS</span>
               </div>
-              <h3>AI Chatbots for Your Business</h3>
-              <p>
+              <h3 data-i18n="service.chatbots.title">AI Chatbots for Your Business</h3>
+              <p data-i18n="service.chatbots.text">
                 Custom AI chatbots that answer customer questions, qualify leads, provide support, and integrate with your business systems.
               </p>
-              <div class="tag-row" aria-label="Technologies">
+              <div class="tag-row" aria-label="Technologies" data-i18n-aria-label="project.tagsAria">
                 <span>ChatGPT</span>
                 <span>Gemini</span>
                 <span>Claude</span>
@@ -355,7 +375,7 @@
                 <span>RAG</span>
               </div>
               <div class="card-actions">
-                <a class="text-button" href="#contact">Learn More</a>
+                <a class="text-button" href="#contact" data-i18n="button.learnMore">Learn More</a>
               </div>
             </div>
           </article>
@@ -368,21 +388,21 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>WEB DEVELOPMENT</span>
+                <span data-i18n="service.website.category">WEB DEVELOPMENT</span>
               </div>
-              <h3>Develop Your Website</h3>
-              <p>
+              <h3 data-i18n="service.website.title">Develop Your Website</h3>
+              <p data-i18n="service.website.text">
                 Modern, responsive websites built for performance, SEO, user experience, and business growth with AI-powered features.
               </p>
-              <div class="tag-row" aria-label="Technologies">
+              <div class="tag-row" aria-label="Technologies" data-i18n-aria-label="project.tagsAria">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
                 <span>Vercel</span>
-                <span>Responsive</span>
+                <span data-i18n="tag.responsive">Responsive</span>
               </div>
               <div class="card-actions">
-                <a class="text-button" href="#contact">View Projects</a>
+                <a class="text-button" href="#contact" data-i18n="button.viewProjects">View Projects</a>
               </div>
             </div>
           </article>
@@ -396,21 +416,21 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>BUSINESS SOLUTIONS</span>
+                <span data-i18n="service.custom.category">BUSINESS SOLUTIONS</span>
               </div>
-              <h3>Custom AI Solutions</h3>
-              <p>
+              <h3 data-i18n="service.custom.title">Custom AI Solutions</h3>
+              <p data-i18n="service.custom.text">
                 I help companies discover automation opportunities, build AI assistants, streamline workflows, and create practical digital solutions that reduce costs and increase productivity.
               </p>
-              <div class="tag-row" aria-label="Technologies">
-                <span>Business AI</span>
-                <span>Automation</span>
-                <span>Consulting</span>
-                <span>Integration</span>
-                <span>Optimization</span>
+              <div class="tag-row" aria-label="Technologies" data-i18n-aria-label="project.tagsAria">
+                <span data-i18n="tag.businessAi">Business AI</span>
+                <span data-i18n="skills.automation.title">Automation</span>
+                <span data-i18n="tag.consulting">Consulting</span>
+                <span data-i18n="tag.integration">Integration</span>
+                <span data-i18n="tag.optimization">Optimization</span>
               </div>
               <div class="card-actions">
-                <a class="text-button" href="#contact">Let's Talk</a>
+                <a class="text-button" href="#contact" data-i18n="button.letsTalk">Let's Talk</a>
               </div>
             </div>
           </article>
@@ -419,9 +439,9 @@
 
       <section class="ai-tools section-pad" id="ai-tools" aria-labelledby="ai-tools-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">AI Workflow</p>
-          <h2 id="ai-tools-title">How I Use AI in Development</h2>
-          <p>
+          <p class="eyebrow" data-i18n="aiWorkflow.eyebrow">AI Workflow</p>
+          <h2 id="ai-tools-title" data-i18n="aiWorkflow.title">How I Use AI in Development</h2>
+          <p data-i18n="aiWorkflow.text">
             AI is part of my process for rapid prototyping, testing ideas, improving communication, and turning workflows into usable product interfaces.
           </p>
         </div>
@@ -429,33 +449,33 @@
         <div class="tool-grid">
           <article class="tool-card reveal">
             <span class="tool-number">01</span>
-            <h3>Generate first drafts with Codex</h3>
-            <p>I use AI to move quickly from a rough idea to a working HTML, CSS, and JavaScript structure.</p>
+            <h3 data-i18n="aiWorkflow.card1.title">Generate first drafts with Codex</h3>
+            <p data-i18n="aiWorkflow.card1.text">I use AI to move quickly from a rough idea to a working HTML, CSS, and JavaScript structure.</p>
           </article>
           <article class="tool-card reveal">
             <span class="tool-number">02</span>
-            <h3>Improve UX copy with ChatGPT</h3>
-            <p>I refine page text, labels, project descriptions, and application messaging for clearer business communication.</p>
+            <h3 data-i18n="aiWorkflow.card2.title">Improve UX copy with ChatGPT</h3>
+            <p data-i18n="aiWorkflow.card2.text">I refine page text, labels, project descriptions, and application messaging for clearer business communication.</p>
           </article>
           <article class="tool-card reveal">
             <span class="tool-number">03</span>
-            <h3>Debug code step by step</h3>
-            <p>I use AI to understand errors, test fixes, and improve code quality while learning the reasoning behind changes.</p>
+            <h3 data-i18n="aiWorkflow.card3.title">Debug code step by step</h3>
+            <p data-i18n="aiWorkflow.card3.text">I use AI to understand errors, test fixes, and improve code quality while learning the reasoning behind changes.</p>
           </article>
           <article class="tool-card reveal">
             <span class="tool-number">04</span>
-            <h3>Create project ideas</h3>
-            <p>I turn business needs into portfolio projects, interface concepts, and simple product workflows.</p>
+            <h3 data-i18n="aiWorkflow.card4.title">Create project ideas</h3>
+            <p data-i18n="aiWorkflow.card4.text">I turn business needs into portfolio projects, interface concepts, and simple product workflows.</p>
           </article>
           <article class="tool-card reveal">
             <span class="tool-number">05</span>
-            <h3>Build simple AI assistants</h3>
-            <p>I plan chatbot-style helpers, recommendation tools, and guided forms for practical customer-facing use cases.</p>
+            <h3 data-i18n="aiWorkflow.card5.title">Build simple AI assistants</h3>
+            <p data-i18n="aiWorkflow.card5.text">I plan chatbot-style helpers, recommendation tools, and guided forms for practical customer-facing use cases.</p>
           </article>
           <article class="tool-card reveal">
             <span class="tool-number">06</span>
-            <h3>Document projects for LinkedIn and GitHub</h3>
-            <p>I use AI to prepare project summaries, case studies, README content, and professional career updates.</p>
+            <h3 data-i18n="aiWorkflow.card6.title">Document projects for LinkedIn and GitHub</h3>
+            <p data-i18n="aiWorkflow.card6.text">I use AI to prepare project summaries, case studies, README content, and professional career updates.</p>
           </article>
         </div>
       </section>
@@ -463,9 +483,9 @@
       <section class="business-case section-pad" id="business-case" aria-labelledby="case-title">
         <div class="case-shell reveal">
           <div class="case-copy">
-            <p class="eyebrow">Business Case</p>
-            <h2 id="case-title">Mini Case Study: From Idea to Website</h2>
-            <p>
+            <p class="eyebrow" data-i18n="case.eyebrow">Business Case</p>
+            <h2 id="case-title" data-i18n="case.title">Mini Case Study: From Idea to Website</h2>
+            <p data-i18n="case.text">
               I created a real business concept, bought a domain, connected GitHub with Vercel, deployed a live website, and used AI tools to generate and improve the design. This shows practical problem-solving, not only theory.
             </p>
           </div>
@@ -473,27 +493,27 @@
           <ol class="timeline">
             <li>
               <span>01</span>
-              <strong>Domain setup</strong>
+              <strong data-i18n="case.step1">Domain setup</strong>
             </li>
             <li>
               <span>02</span>
-              <strong>GitHub repository</strong>
+              <strong data-i18n="case.step2">GitHub repository</strong>
             </li>
             <li>
               <span>03</span>
-              <strong>Vercel deployment</strong>
+              <strong data-i18n="case.step3">Vercel deployment</strong>
             </li>
             <li>
               <span>04</span>
-              <strong>Website design</strong>
+              <strong data-i18n="case.step4">Website design</strong>
             </li>
             <li>
               <span>05</span>
-              <strong>AI-assisted improvements</strong>
+              <strong data-i18n="case.step5">AI-assisted improvements</strong>
             </li>
             <li>
               <span>06</span>
-              <strong>Future chatbot and automation features</strong>
+              <strong data-i18n="case.step6">Future chatbot and automation features</strong>
             </li>
           </ol>
         </div>
@@ -502,33 +522,33 @@
       <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
         <div class="contact-grid">
           <div class="contact-copy reveal">
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Let's build useful AI-powered web experiences.</h2>
-            <p>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 id="contact-title" data-i18n="contact.title">Let's build useful AI-powered web experiences.</h2>
+            <p data-i18n="contact.text">
               I am open to junior roles, internships, and entry-level projects connected to frontend development, AI tools, automation, dashboards, and practical business applications.
             </p>
             <div class="contact-actions">
-              <a class="btn btn-primary" href="mailto:obai990@outlook.com?subject=Obai4AI%20career%20opportunity">Contact Me</a>
-              <a href="Lebenslauf.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+              <a class="btn btn-primary" href="mailto:obai990@outlook.com?subject=Obai4AI%20career%20opportunity" data-i18n="button.contactMe">Contact Me</a>
+              <a href="Lebenslauf.pdf" target="_blank" class="btn btn-secondary" data-i18n="button.downloadCv">Download CV</a>
             </div>
           </div>
 
-          <aside class="contact-panel reveal" aria-label="Contact details">
+          <aside class="contact-panel reveal" aria-label="Contact details" data-i18n-aria-label="contact.detailsAria">
             <div class="contact-row">
-              <span>Email</span>
+              <span data-i18n="contact.email">Email</span>
               <a href="mailto:obai990@outlook.com">obai990@outlook.com</a>
             </div>
             <div class="contact-row">
-              <span>Location</span>
-              <strong>Leipzig, Germany</strong>
+              <span data-i18n="contact.location">Location</span>
+              <strong data-i18n="contact.locationValue">Leipzig, Germany</strong>
             </div>
             <div class="contact-row">
-              <span>GitHub</span>
+              <span data-i18n="social.github">GitHub</span>
               <a href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">Obai707</a>
             </div>
             <div class="contact-row">
-              <span>LinkedIn</span>
-              <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">Add placeholder link</a>
+              <span data-i18n="social.linkedin">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" data-i18n="contact.linkedinPlaceholder">Add placeholder link</a>
             </div>
           </aside>
         </div>
@@ -538,53 +558,53 @@
     <footer class="site-footer">
       <div class="footer-shell">
         <div class="footer-brand">
-          <a class="brand" href="#top" aria-label="Obai4AI home">
+          <a class="brand" href="#top" aria-label="Obai4AI home" data-i18n-aria-label="brand.home">
             <span class="brand-mark" aria-hidden="true">O4</span>
             <span class="brand-copy">
               <strong>Obai4AI</strong>
-              <small>Frontend, AI Tools &amp; Automation Projects</small>
+              <small data-i18n="footer.brandSmall">Frontend, AI Tools &amp; Automation Projects</small>
             </span>
           </a>
-          <p>
+          <p data-i18n="footer.brandText">
             A career-focused technology portfolio for AI-powered web products, business automation, and frontend systems.
           </p>
         </div>
 
         <div class="footer-column">
-          <h2>Resources</h2>
-          <a href="Obai-Alabed-Alalawi-CV.txt" download>Download CV</a>
-          <a href="#business-case">Case Study</a>
-          <a href="#ai-tools">AI Workflow</a>
+          <h2 data-i18n="footer.resources">Resources</h2>
+          <a href="Obai-Alabed-Alalawi-CV.txt" download data-i18n="button.downloadCv">Download CV</a>
+          <a href="#business-case" data-i18n="footer.caseStudy">Case Study</a>
+          <a href="#ai-tools" data-i18n="footer.aiWorkflow">AI Workflow</a>
         </div>
 
         <div class="footer-column">
-          <h2>Projects</h2>
-          <a href="#projects">Vintage Bikes Leipzig</a>
-          <a href="#projects">AI Bike Advisor</a>
-          <a href="#projects">AI Career Portfolio</a>
+          <h2 data-i18n="footer.projects">Projects</h2>
+          <a href="#projects" data-i18n="footer.project1">Vintage Bikes Leipzig</a>
+          <a href="#projects" data-i18n="footer.project2">AI Bike Advisor</a>
+          <a href="#projects" data-i18n="footer.project3">AI Career Portfolio</a>
         </div>
 
         <div class="footer-column">
-          <h2>Contact</h2>
+          <h2 data-i18n="footer.contact">Contact</h2>
           <a href="mailto:obai990@outlook.com">obai990@outlook.com</a>
-          <a href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Obai707" target="_blank" rel="noopener noreferrer" data-i18n="social.github">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" data-i18n="social.linkedin">LinkedIn</a>
         </div>
 
         <form class="newsletter-card" action="mailto:obai990@outlook.com" method="post" enctype="text/plain">
-          <h2>Stay Connected</h2>
-          <p>Follow future AI, automation, and frontend project updates from Obai4AI.</p>
-          <label class="sr-only" for="newsletter-email">Email address</label>
+          <h2 data-i18n="newsletter.title">Stay Connected</h2>
+          <p data-i18n="newsletter.text">Follow future AI, automation, and frontend project updates from Obai4AI.</p>
+          <label class="sr-only" for="newsletter-email" data-i18n="newsletter.label">Email address</label>
           <div class="newsletter-form">
-            <input id="newsletter-email" type="email" name="email" placeholder="Email address" />
-            <button class="btn btn-primary" type="submit">Notify Me</button>
+            <input id="newsletter-email" type="email" name="email" placeholder="Email address" data-i18n-placeholder="newsletter.placeholder" />
+            <button class="btn btn-primary" type="submit" data-i18n="newsletter.button">Notify Me</button>
           </div>
         </form>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span data-year></span> Obai4AI. Built by Obai Alabed Alalawi.</p>
-        <a href="#top">Back to top</a>
+        <p>&copy; <span data-year></span> <span data-i18n="footer.bottom">Obai4AI. Built by Obai Alabed Alalawi.</span></p>
+        <a href="#top" data-i18n="footer.backTop">Back to top</a>
       </div>
     </footer>
 
